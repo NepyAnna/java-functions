@@ -72,6 +72,7 @@ public class DocComments {
      * Function name: resultsBMI
      *
      * @param bmi (double)
+     *@return (String)
      *
      * Inside the function:
      * 1. Inside conditional statements, return a text (String)
