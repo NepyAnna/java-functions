@@ -9,6 +9,7 @@ public class DocComments {
         greetingCoder("Alex", 155, 44.50);
         double bmi = calculateBodyMassIndex(1.55, 44.50);
         System.out.println(bmi);
+        System.out.println(resultsBMI(bmi));
 
         //Ejecuta el nuevo método 
     }
@@ -67,6 +68,33 @@ public class DocComments {
     Obeso Clase II	35 - 40
     Obeso Clase III	> 40 */
 
+    /**
+     * Function name: resultsBMI
+     *
+     * @param bmi (double)
+     *
+     * Inside the function:
+     * 1. Inside conditional statements, return a text (String)
+     * with the description of the BMI calculator result (double) received as a parameter.
+     */
 
-
+    public static String resultsBMI(double bmi) {
+        if (bmi < 16 ) {
+            return  "Delgadez severa";
+        } else if (bmi >= 16 && bmi < 17 ) {
+            return "Delgadez moderada";
+        } else if (bmi >= 17 && bmi < 18.5) {
+            return  "Delgadez leve";
+        } else if (bmi >= 18.5 && bmi < 25) {
+            return  "Normal";
+        } else if (bmi >= 25 && bmi < 30) {
+            return "Sobrepeso";
+        } else if (bmi >= 30 && bmi < 35) {
+            return  "Obeso Clase I";
+        } else if (bmi >= 35 && bmi < 40) {
+            return "Obeso Clase II";
+        } else {
+            return "Obeso Clase III";
+        }
+    }
 }

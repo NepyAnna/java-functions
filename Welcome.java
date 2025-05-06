@@ -18,6 +18,7 @@ public  class Welcome {
     public static void greetingCoder(String name) {
         System.out.println("¡Hola, " + name + "!");
     }
+    
     public static void main(String[] args) {
         greeting();
         greetingCoder("Anna");
